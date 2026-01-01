@@ -189,7 +189,7 @@ def create_demo() -> gr.Blocks:
         gr.Markdown(
             """
             # 🌍 AQI Analysis Agent
-            Get personalized health recommendations based on air quality conditions.
+            Get personalized health recommendations based on air quality conditions. To use this agent you first neeed to configure the api keys.
             """
         )
         
@@ -209,13 +209,13 @@ def create_demo() -> gr.Blocks:
         # Location Details
         with gr.Row():
             with gr.Column():
-                city = gr.Textbox(label="City", placeholder="e.g., Mumbai")
+                city = gr.Textbox(label="City", placeholder="e.g., Kathmandu")
                 state = gr.Textbox(
                     label="State",
-                    placeholder="Leave blank for Union Territories or US cities",
+                    placeholder="Leave blank if unknown",
                     value=""
                 )
-                country = gr.Textbox(label="Country", value="India")
+                country = gr.Textbox(label="Country", value="Nepal")
         
         # Personal Details
         with gr.Row():

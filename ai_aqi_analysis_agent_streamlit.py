@@ -168,7 +168,7 @@ def setup_page():
     )
     
     st.title("🌍 AQI Analysis Agent")
-    st.info("Get personalized health recommendations based on air quality conditions.")
+    st.info("Get personalized health recommendations based on air quality conditions. Get personalized health recommendations based on air quality conditions. To use this agent you first neeed to configure the api keys.")
 
 def render_sidebar():
     """Render sidebar with API configuration"""
@@ -202,9 +202,9 @@ def render_main_content():
     col1, col2 = st.columns(2)
     
     with col1:
-        city = st.text_input("City", placeholder="e.g., Mumbai")
-        state = st.text_input("State", placeholder="If it's a Union Territory or a city in the US, leave it blank")
-        country = st.text_input("Country", value="India", placeholder="United States")
+        city = st.text_input("City", placeholder="e.g., Kathmandu")
+        state = st.text_input("State", placeholder="If unknown leave it blank")
+        country = st.text_input("Country", value="Nepal", placeholder="Nepal")
     
     with col2:
         st.header("👤 Personal Details")
